@@ -27,8 +27,8 @@ apply plugin: 'idea'
 apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 ext {
@@ -61,6 +61,9 @@ tasks.withType(JavaCompile).configureEach {
 
 test {
     useJUnitPlatform()
+    filter {
+        includeTestsMatching("org.sstelmaj.runners.AllScenariosRunner")
+    }
 }
 
 serenity {
