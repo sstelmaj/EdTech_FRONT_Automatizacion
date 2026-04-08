@@ -106,6 +106,10 @@ Al finalizar la ejecución, los reportes Serenity se generan automáticamente en
 ```
 target/site/serenity/index.html
 ```
+### Captura de pantalla al ejecutar todos los escenarios
+
+<img width="1893" height="778" alt="image" src="https://github.com/user-attachments/assets/1080c9c0-3788-4e5f-8581-f84de128f8e5" />
+
 
 ## Configuración
 
